@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+
+namespace NUnitTestProject1
+{
+    public class Exercise
+    {
+        public static int Factorial(int num)
+        {
+            List<int> myList = new List<int>();
+
+            for(var i = 1; i <= num; i++)
+            {
+                myList.Add(i);
+            }
+
+            var result = 1;
+            for(var i = 0; i < myList.Count; i++)
+            {
+                result = result * myList[i];
+            }
+            string s = $"The factorial of {num} is {result}";
+            Console.WriteLine($"The factorial of { num} is { result }");
+            return result;
+        }
+    }
+}
