@@ -19,7 +19,7 @@ namespace NUnitTestProject1
             {
                 result = result * myList[i];
             }
-            Console.WriteLine($"The factorial of { num} is { result }");
+            Console.WriteLine($"The factorial of {num} is {result}");
         }
     }
 }
